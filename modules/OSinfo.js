@@ -1,6 +1,7 @@
+var timer = require('./time');
 var os = require('os');
 var colors = require('colors');
-var timer = require('../modules/time');
+
 
 
 function getOSinfo() {

@@ -1,7 +1,4 @@
-var os = require('os');
-
 function timer(uptime) {
-	// var time = os.uptime();
 	
 	var hours = Math.floor(uptime / 3600);
 	var minutes = Math.floor((uptime % 3600) / 60);
@@ -11,4 +8,3 @@ function timer(uptime) {
 }
 
 exports.print = timer;
-

@@ -2,8 +2,7 @@ process.stdin.setEncoding('utf-8');
 
 var OSinfo = require('./modules/OSinfo');
 
-
-console.log('Hello, give the command')
+console.log('Hello, give the command!')
 
 process.stdin.on('readable', function() {
 	var input = process.stdin.read();
@@ -24,7 +23,7 @@ process.stdin.on('readable', function() {
 				OSinfo.print();
 				break;
 		 	default:
-			process.stderr.write('Wrong instruction!');
+				process.stderr.write('Wrong instruction!');
 		}
 	}
 });

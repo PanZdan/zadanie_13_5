@@ -2,8 +2,6 @@ var timer = require('./time');
 var os = require('os');
 var colors = require('colors');
 
-
-
 function getOSinfo() {
 	var type = os.type();
 
